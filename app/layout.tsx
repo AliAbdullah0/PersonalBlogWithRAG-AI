@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/components/ThemeProvider";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -19,18 +18,12 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
         <Navigation/>
         {children}
         <footer>
           <Footer/>
         </footer>
-        </ThemeProvider>
+
       </body>
     </html>
   );
