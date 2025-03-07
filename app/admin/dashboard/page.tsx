@@ -11,6 +11,7 @@ import UpdatePostForm from "@/components/UpdatePostForm";
 import DeletePostDialog from "@/components/DeletePostClient";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { handleLogout } from "@/lib/Logout";
 
  
 type Post = Awaited<ReturnType<typeof getPosts>>;
@@ -105,14 +106,14 @@ const Dashboard = () => {
     <div className="flex w-full min-h-screen mt-12">
       <Sidebar />
       <div className="w-full p-6 bg-background">
-        <div className="flex items-end justify-between mb-8">
+        <div className="flex items-end md:justify-between justify-center mb-8">
           <div>
             <h1 className="mb-2 flex md:flex-row flex-col gap-4 text-3xl font-extrabold mt-4 text-foreground">
               Admin Panel
             </h1>
           <form
             onSubmit={(e) => e.preventDefault()}
-            className="flex gap-2 max-w-sm w-full"
+            className="flex gap-2 max-w-full md:flex-row flex-col md:max-w-sm w-full"
           >
             <Input
               type="text"
@@ -124,6 +125,7 @@ const Dashboard = () => {
             <Button type="submit" variant="default" disabled>
               Search
             </Button>
+            <Button onClick={handleLogout}>Logout</Button>
           </form>
               </div>
         </div>
