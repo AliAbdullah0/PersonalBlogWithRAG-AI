@@ -2,13 +2,13 @@
   "name": "personalblog",
   "version": "0.1.0",
   "private": true,
-    "scripts": {
-      "dev": "next dev",
-      "build": "prisma generate && next build",
-      "start": "next start",
-      "prisma:generate": "prisma generate --no-engine",
-      "prisma:dev": "prisma generate"
-    },
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "prisma:generate": "prisma generate --no-engine",
+    "prisma:dev": "prisma generate"
+  },
   "dependencies": {
     "@auth/prisma-adapter": "^2.8.0",
     "@google/generative-ai": "^0.23.0",
@@ -26,6 +26,7 @@
     "@radix-ui/react-scroll-area": "^1.2.3",
     "@radix-ui/react-separator": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.2",
+    "@vercel/analytics": "^1.5.0",
     "axios": "^1.8.1",
     "class-variance-authority": "^0.7.1",
     "cloudinary": "^2.5.1",

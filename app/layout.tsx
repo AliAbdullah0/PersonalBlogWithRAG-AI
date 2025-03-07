@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "AstraX | Blogs",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
+        <Analytics/>
         <Navigation/>
         {children}
         <footer>
