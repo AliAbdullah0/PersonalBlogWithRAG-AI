@@ -9,7 +9,7 @@ export const Hero = () => {
           width={500} 
           height={800} 
           className="w-full lg:w-1/2 xl:w-full max-w-[550px] lg:order-2" 
-          src="https://iili.io/2ysFUen.png" 
+          src="/hero.png" 
           alt="Blog illustration"
         />
         <div className="text-center md:text-left">

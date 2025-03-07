@@ -9,10 +9,10 @@ const Footer = () => {
           <a href="https://github.com/AliAbdullah0" target="_blank" rel="noopener noreferrer">
             <FiGithub className="w-5 h-5 hover:text-gray-600 transition-colors" />
           </a>
-          <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/ali_abdullah.ta/" target="_blank" rel="noopener noreferrer">
             <FiInstagram className="w-5 h-5 hover:text-gray-600 transition-colors" />
           </a>
-          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/ali-abdullah-214178302/" target="_blank" rel="noopener noreferrer">
             <FiLinkedin className="w-5 h-5 hover:text-blue-700 transition-colors" />
           </a>
         </div>

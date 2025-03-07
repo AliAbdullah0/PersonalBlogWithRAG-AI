@@ -11,6 +11,36 @@ import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import PostsBar from "@/components/PostsBar";
 
+type PageProps = { params: Promise<{ id: string }> };
+
+export async function generateMetadata({ params }: PageProps) {
+  const { id } = await params;
+  const Post = await prisma.post.findUnique({
+    where:{
+      id:id,
+    },
+    select:{
+      id: true,
+      title: true,
+      content: true,
+      image: true,
+      author: true,
+      createdAt: true,
+      reference: true,
+    }
+  })
+  if (!Post) {
+    return {
+      title: "Post Not Found",
+      description: "The Post you are looking for does not exist.",
+    };
+  }
+  return {
+    title: `${Post.title}`,
+    description: Post.content || `Check out ${Post.content}'s profile.`,
+  };
+}
+
 const BlogPage = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params;
 
