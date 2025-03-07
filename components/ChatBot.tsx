@@ -79,7 +79,7 @@ const ChatBot = () => {
   
       if (!reader) throw new Error("No reader available");
   
-      let botMessage: Message = {
+      const botMessage: Message = {
         text: "",
         isUser: false,
         timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
