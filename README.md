@@ -10,5 +10,5 @@ Here’s what powers AstraX Blog:
 - **:rocket: Next.js** - React framework for server-side rendering and static site generation.
 - **:art: shadcn/ui** - Beautifully designed components for a sleek UI.
 - **:gear: Prisma ORM** - Next-generation ORM for database management.
-- **:elephant: PostgreSQL** - Reliable and scalable relational database.
+- **:elephant: Prisma PostgreSQL** - Reliable and scalable relational database.
 - **:sparkles: Gemini** - Enhancing the blog with AI-driven features.
