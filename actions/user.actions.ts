@@ -45,7 +45,11 @@ export const deletePost = async (postId:string)=>{
 
 export const getPosts = async ()=>{
     try {
-        const posts = await prisma.post.findMany()
+        const posts = await prisma.post.findMany({
+            orderBy:{
+                createdAt:'desc'
+            }
+        })
         // revalidatePath('/posts')
         return posts
     } catch (error) {
