@@ -62,14 +62,13 @@ const About = () => {
             About Us
           </h1>
           <p className="text-muted-foreground mb-4">
-            Welcome to Blog AI, where innovation meets creativity. We’re a team passionate about harnessing artificial intelligence to revolutionize content creation. Our mission is to empower writers, bloggers, and creators with tools that make crafting compelling stories easier and more efficient.
+            Welcome to Blog AI, where innovation meets creativity.I am, passionate about harnessing artificial intelligence to revolutionize content creation.
           </p>
           <p className="text-muted-foreground">
-            Founded in 2023, we’ve been working tirelessly to build a platform that blends cutting-edge technology with user-friendly design. Whether you’re here to explore our blog, share your thoughts, or join our journey, we’re excited to have you with us!
+            I have been working tirelessly to build a platform that blends cutting-edge technology with user-friendly design. Whether you’re here to explore my blog, share your thoughts, or join my journey, I am excited to have you with me!
           </p>
         </div>
 
-        {/* Feedback Form Section */}
         <div className="flex flex-col justify-center">
           <h2 className="text-2xl font-semibold text-foreground mb-6 text-center">
             Share Your Feedback
