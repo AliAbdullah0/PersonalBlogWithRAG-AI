@@ -109,7 +109,7 @@ const BlogPage = async ({ params }: { params: Promise<{ id: string }> }) => {
                       href={`https://www.${post.reference}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary hover:underline"
+                      className="text-blue-400 hover:underline"
                     >
                       {post.reference}
                     </Link>
