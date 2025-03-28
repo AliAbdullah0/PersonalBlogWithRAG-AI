@@ -1,4 +1,4 @@
-import { askGemini } from "@/lib/Gemini"; // Adjust path as needed
+import { askGemini } from "@/lib/Gemini";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    // Return the stream as the response
+
     return new NextResponse(stream, {
       status: 200,
       headers: {
